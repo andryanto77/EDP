@@ -1,0 +1,17 @@
+<form action="/updatevoucher" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend name="header">Input New Item</legend>
+            <p>
+                <label>Voucher NON Aktif</label>
+                <select type="number" name="VOUCHER_TYPE">
+                    <option value = "0">NON Aktif</option>
+                    <option value = "1">Aktif</option>
+                </select>
+            </p>
+            <p>
+                <label>File: </label>
+                <input type="file" name="filecsv" required>
+            </p>
+            <input type="submit" id="update_voucher">
+        </fieldset>
+    </form>

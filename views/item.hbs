@@ -1,0 +1,31 @@
+<form action="/uploaditem" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend name="header">Input New Item</legend>
+            <p>
+                <label>Serial Number</label>
+                <select type="number" name="POS_Voucher_Type">
+                    <option value = "2">Not Use</option>
+                    <option value = "3">Use</option>
+                </select>
+            </p>
+            <p>
+                <label>Item Type</label>
+                <select type="number" name="POS_All_Category_CB">
+                    <option value = "0">MD</option>
+                    <option value = "1">PURCHASING</option>
+                </select>
+            </p>
+            <p>
+                <label>Select Site</label>
+                <select type="text" name = "POS_STORE_GROUP_ID">
+                    <option value = "STORE GROUP ALL">ALL</option>
+                    <option value = "LGN BDG CMD">ABC&CMD</option>
+                </select>
+            </p>
+            <p>
+                <label>File: </label>
+                <input type="file" name="filecsv" required>
+            </p>
+            <input type="submit" id="upload_item">
+        </fieldset>
+    </form>

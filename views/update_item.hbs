@@ -1,0 +1,18 @@
+<form action="/updateitem" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend name="header">Input New Item</legend>
+            <p>
+                <label>Item Type</label>
+                <select type="number" name="ITEM_TYPE">
+                    <option value = "1">Sales Inventory</option>
+                    <option value = "2">Discontinued</option>
+                    <option value = "5">NON Retail</option>
+                </select>
+            </p>
+            <p>
+                <label>File: </label>
+                <input type="file" name="filecsv" required>
+            </p>
+            <input type="submit" id="update_item">
+        </fieldset>
+    </form>
